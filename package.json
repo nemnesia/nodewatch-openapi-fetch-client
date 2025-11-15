@@ -1,0 +1,33 @@
+{
+  "name": "@nemnesia/nodewatch-openapi-fetch-client",
+  "description": "OpenAPI client for nodewatch-openapi-fetch-client",
+  "author": "The Symbol Syndicate",
+  "contributors": [
+    {
+      "name": "ccHarvestasya",
+      "x.com": "@ccHarvestasya"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nemnesia/nodewatch-openapi-fetch-client.git"
+  },
+  "packageManager": "yarn@4.11.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "volta": {
+    "node": "18.20.8",
+    "yarn": "4.11.0"
+  },
+  "scripts": {
+    "gen:ts": "rimraf typescript/dist && openapi-generator-cli generate -i openapi-nodewatch.yaml -g typescript-fetch -o typescript/dist -t custom-templates",
+    "get": "curl -so openapi-nodewatch.yaml https://nodewatch.symbol.tools/static/openapi/openapi.yaml",
+    "custom-templates": "openapi-generator-cli author template -g typescript-fetch -o custom-templates"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.25.0",
+    "rimraf": "^6.1.0"
+  }
+}

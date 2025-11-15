@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Development files
+src/
+test/
+.vscode/
+.env
+*.env
+*.log
+
+# Build and development configuration
+.gitignore
+.eslintrc*
+.prettierrc*
+tsconfig.json
+openapitools.json
+
+# OpenAPI source file
+openapi-symbol.yml
+
+# Template files (only generated files needed)
+custom-templates/
+
+# Yarn files
+.yarn/
+.yarnrc*
+yarn.lock
+
+# Git
+.git/
+.github/
+
+# OS files
+.DS_Store
+Thumbs.db
