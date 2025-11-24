@@ -13,5 +13,9 @@ This project is for generating a NodeWatch client using the NodeWatch OpenAPI.
 
 ## License / ライセンス
 
+
+**Note:** The license is currently set to [Apache License 2.0](./LICENSE) as a provisional measure. It may be changed to MIT License in the future if confirmed.  
+**注:** 現在は暫定的に [Apache License 2.0](./LICENSE) ですが、後日ライセンスが変更される可能性があります。
+
 This project is licensed under the [Apache License 2.0](./LICENSE).  
 このプロジェクトは [Apache License 2.0](./LICENSE) の下でライセンスされています。

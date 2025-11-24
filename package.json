@@ -22,7 +22,7 @@
     "yarn": "4.11.0"
   },
   "scripts": {
-    "gen:ts": "rimraf typescript/dist && openapi-generator-cli generate -i openapi-nodewatch.yaml -g typescript-fetch -o typescript/dist -t custom-templates",
+    "gen:ts": "rimraf typescript/src && openapi-generator-cli generate -i openapi-nodewatch.yaml -g typescript-fetch -o typescript/src -t custom-templates",
     "get": "curl -so openapi-nodewatch.yaml https://nodewatch.symbol.tools/static/openapi/openapi.yaml",
     "custom-templates": "openapi-generator-cli author template -g typescript-fetch -o custom-templates"
   },
