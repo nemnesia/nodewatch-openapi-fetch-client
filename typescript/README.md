@@ -1,34 +1,34 @@
 # @nemnesia/nodewatch-openapi-typescript-fetch-client
 
-`@nemnesia/nodewatch-openapi-typescript-fetch-client` is a library for generating TypeScript clients using the NodeWatch OpenAPI. This library provides tools for easy access to the Symbol API.  
-`@nemnesia/nodewatch-openapi-typescript-fetch-client` は、NodeWatch OpenAPI を利用して TypeScript クライアントを生成するためのライブラリです。このライブラリは、Symbol API に簡単にアクセスするためのツールを提供します。
+`@nemnesia/nodewatch-openapi-typescript-fetch-client` は、NodeWatch OpenAPI を利用して TypeScript クライアントを生成するためのライブラリです。このライブラリは、Symbol API に簡単にアクセスするためのツールを提供します。  
+`@nemnesia/nodewatch-openapi-typescript-fetch-client` is a library for generating TypeScript clients using the NodeWatch OpenAPI. This library provides tools for easy access to the Symbol API.
 
-## Features / 特徴
+## 特徴 / Features
 
-- Code automatically generated based on the OpenAPI specification / OpenAPI 仕様に基づいて自動生成されたコード
-- Supports TypeScript / TypeScript に対応
-- Apache License 2.0 / Apache 2.0 ライセンス
+- OpenAPI 仕様に基づいて自動生成されたコード / Code automatically generated based on the OpenAPI specification
+- TypeScript に対応 / Supports TypeScript
+- Apache 2.0 ライセンス / Apache License 2.0
 
-## Install / インストール
+## インストール / Install
 
-You can install it using the following command:  
-以下のコマンドでインストールできます：
+以下のコマンドでインストールできます：  
+You can install it using the following command:
 
 ```bash
 npm install @nemnesia/nodewatch-openapi-typescript-fetch-client
 ```
 
-Or, when using Yarn:  
-または、Yarn を使用する場合：
+または、Yarn を使用する場合：  
+Or, when using Yarn:
 
 ```bash
 yarn add @nemnesia/nodewatch-openapi-typescript-fetch-client
 ```
 
-## Usage / 使用方法
+## 使用方法 / Usage
 
-Here is an example of how to interact with the NodeWatch API:  
-以下のコードを利用して、NodeWatch API にアクセスします：
+以下のコードを利用して、NodeWatch API にアクセスします：  
+Here is an example of how to interact with the NodeWatch API:
 
 ```typescript
 import { Configuration, SymbolNodesApi } from '@nemnesia/nodewatch-openapi-typescript-fetch-client';
@@ -45,13 +45,16 @@ client
   });
 ```
 
-## スクリプト
+## スクリプト / Scripts
 
-- `yarn test`: Run the test. / テストを実行します。
-- `yarn build`: Execute the build. / ビルドを実行します。
-- `yarn publish:release`: Release the package. / パッケージを公開します。
+- `yarn test`: テストを実行します。/ Run the test.
+- `yarn build`: ビルドを実行します。/ Execute the build.
+- `yarn publish:release`: パッケージを公開します。/ Release the package.
 
-## ライセンス
+## ライセンス / License
 
-This project is licensed under the [Apache License 2.0](./LICENSE).  
-このプロジェクトは [Apache License 2.0](./LICENSE) の下でライセンスされています。
+**Note:** The license is currently set to [Apache License 2.0](./LICENSE) as a provisional measure. It may be changed to MIT License in the future if confirmed.  
+**注:** 現在は暫定的に [Apache License 2.0](./LICENSE) ですが、後日ライセンスが変更される可能性があります。
+
+このプロジェクトは [Apache License 2.0](./LICENSE) の下でライセンスされています。  
+This project is licensed under the [Apache License 2.0](./LICENSE).
