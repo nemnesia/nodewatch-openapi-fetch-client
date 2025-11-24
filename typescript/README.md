@@ -31,14 +31,9 @@ Here is an example of how to interact with the NodeWatch API:
 以下のコードを利用して、NodeWatch API にアクセスします：
 
 ```typescript
-import {
-  Configuration,
-  SymbolNodesApi,
-} from "@nemnesia/nodewatch-openapi-typescript-fetch-client";
+import { Configuration, SymbolNodesApi } from '@nemnesia/nodewatch-openapi-typescript-fetch-client';
 
-const client = new SymbolNodesApi(
-  new Configuration({ basePath: "https://nodewatch.symbol.tools" })
-);
+const client = new SymbolNodesApi(new Configuration({ basePath: 'https://nodewatch.symbol.tools' }));
 
 client
   .getSymbolPeerNodes({ onlySsl: true })
@@ -46,7 +41,7 @@ client
     console.log(response);
   })
   .catch((error) => {
-    console.error("Error fetching account info:", error);
+    console.error('Error fetching account info:', error);
   });
 ```
 
