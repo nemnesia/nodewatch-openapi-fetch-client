@@ -1,5 +1,7 @@
 # @nemnesia/nodewatch-openapi-typescript-fetch-client
 
+![npm version](https://img.shields.io/npm/v/@nemnesia/nodewatch-openapi-typescript-fetch-client?style=flat-square)
+
 `@nemnesia/nodewatch-openapi-typescript-fetch-client` は、NodeWatch OpenAPI を利用して TypeScript クライアントを生成するためのライブラリです。このライブラリは、Symbol API に簡単にアクセスするためのツールを提供します。  
 `@nemnesia/nodewatch-openapi-typescript-fetch-client` is a library for generating TypeScript clients using the NodeWatch OpenAPI. This library provides tools for easy access to the Symbol API.
 
