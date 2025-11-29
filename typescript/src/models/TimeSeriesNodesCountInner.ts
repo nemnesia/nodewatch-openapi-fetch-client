@@ -16,72 +16,63 @@
  * limitations under the License.
  */
 
-import { mapValues } from '../runtime';
 import type { TimeSeriesNodesCountInnerValues } from './TimeSeriesNodesCountInnerValues';
-import {
-    TimeSeriesNodesCountInnerValuesFromJSON,
-    TimeSeriesNodesCountInnerValuesFromJSONTyped,
-    TimeSeriesNodesCountInnerValuesToJSON,
-    TimeSeriesNodesCountInnerValuesToJSONTyped,
-} from './TimeSeriesNodesCountInnerValues';
+import { TimeSeriesNodesCountInnerValuesFromJSON, TimeSeriesNodesCountInnerValuesToJSON } from './TimeSeriesNodesCountInnerValues';
 
 /**
- * 
+ *
  * @export
  * @interface TimeSeriesNodesCountInner
  */
 export interface TimeSeriesNodesCountInner {
-    /**
-     * 
-     * @type {Date}
-     * @memberof TimeSeriesNodesCountInner
-     */
-    date: Date;
-    /**
-     * 
-     * @type {TimeSeriesNodesCountInnerValues}
-     * @memberof TimeSeriesNodesCountInner
-     */
-    values: TimeSeriesNodesCountInnerValues;
+  /**
+   *
+   * @type {Date}
+   * @memberof TimeSeriesNodesCountInner
+   */
+  date: Date;
+  /**
+   *
+   * @type {TimeSeriesNodesCountInnerValues}
+   * @memberof TimeSeriesNodesCountInner
+   */
+  values: TimeSeriesNodesCountInnerValues;
 }
 
 /**
  * Check if a given object implements the TimeSeriesNodesCountInner interface.
  */
 export function instanceOfTimeSeriesNodesCountInner(value: object): value is TimeSeriesNodesCountInner {
-    if (!('date' in value) || value['date'] === undefined) return false;
-    if (!('values' in value) || value['values'] === undefined) return false;
-    return true;
+  if (!('date' in value) || value['date'] === undefined) return false;
+  if (!('values' in value) || value['values'] === undefined) return false;
+  return true;
 }
 
 export function TimeSeriesNodesCountInnerFromJSON(json: any): TimeSeriesNodesCountInner {
-    return TimeSeriesNodesCountInnerFromJSONTyped(json, false);
+  return TimeSeriesNodesCountInnerFromJSONTyped(json, false);
 }
 
 export function TimeSeriesNodesCountInnerFromJSONTyped(json: any, ignoreDiscriminator: boolean): TimeSeriesNodesCountInner {
-    if (json == null) {
-        return json;
-    }
-    return {
-        
-        'date': (new Date(json['date'])),
-        'values': TimeSeriesNodesCountInnerValuesFromJSON(json['values']),
-    };
+  if (json == null) {
+    return json;
+  }
+  return {
+    date: new Date(json['date']),
+    values: TimeSeriesNodesCountInnerValuesFromJSON(json['values']),
+  };
 }
 
 export function TimeSeriesNodesCountInnerToJSON(json: any): TimeSeriesNodesCountInner {
-    return TimeSeriesNodesCountInnerToJSONTyped(json, false);
+  return TimeSeriesNodesCountInnerToJSONTyped(json, false);
 }
 
 export function TimeSeriesNodesCountInnerToJSONTyped(value?: TimeSeriesNodesCountInner | null, ignoreDiscriminator: boolean = false): any {
-    if (value == null) {
-        return value;
-    }
+  if (value == null) {
+    return value;
+  }
 
-    return {
-        
-        'date': value['date'].toISOString().substring(0,10),
-        'values': TimeSeriesNodesCountInnerValuesToJSON(value['values']),
-    };
+  return {
+    date: value['date'].toISOString().substring(0, 10),
+    values: TimeSeriesNodesCountInnerValuesToJSON(value['values']),
+  };
 }
-
