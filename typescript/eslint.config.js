@@ -20,9 +20,7 @@ export default [
       '@typescript-eslint': tsPlugin,
     },
     rules: {
-      // disable base rule as it can report incorrect results for TS
       'no-unused-vars': 'off',
-      // allow unused function args (including function-type parameter names)
       '@typescript-eslint/no-unused-vars': [
         'error',
         {

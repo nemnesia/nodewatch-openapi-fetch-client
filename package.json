@@ -27,7 +27,7 @@
     "custom-templates": "openapi-generator-cli author template -g typescript-fetch -o custom-templates"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "^2.25.0",
-    "rimraf": "^6.1.0"
+    "@openapitools/openapi-generator-cli": "^2.25.2",
+    "rimraf": "^6.1.2"
   }
 }
